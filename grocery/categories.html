@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Market - Categories</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="logo-text">
+                        <span>The Market</span>
+                        <small>grocery.com</small>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search product category">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="header-icons">
+                    <img src="https://i.pravatar.cc/40?img=12" alt="User" class="user-avatar">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-bell"></i>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shopping.html">Shopping</a></li>
+                    <li><a href="categories.html" class="active">Categories</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content with Sidebar -->
+    <main class="shopping-main">
+        <div class="container-shopping">
+            <!-- Left Sidebar -->
+            <aside class="sidebar">
+                <div class="filter-section">
+                    <h3>Types of products</h3>
+                    <div class="filter-options">
+                        <label><input type="checkbox" name="product-type" value="groceries"> Groceries</label>
+                        <label><input type="checkbox" name="product-type" value="fresh-fruits"> Fresh Fruits</label>
+                        <label><input type="checkbox" name="product-type" value="milk-egg"> Milk & Egg</label>
+                        <label><input type="checkbox" name="product-type" value="bakery"> Bakery</label>
+                        <label><input type="checkbox" name="product-type" value="vegetables"> Vegetables</label>
+                        <label><input type="checkbox" name="product-type" value="dry-fruits"> Dry Fruits</label>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Special offer</h3>
+                    <div class="filter-options">
+                        <label><input type="radio" name="special-offer" value="discount"> Discount</label>
+                        <label><input type="radio" name="special-offer" value="last-minute"> Last minute-deals</label>
+                        <label><input type="radio" name="special-offer" value="all-inclusive"> All-inclusive</label>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Prices Section</h3>
+                    <div class="filter-options">
+                        <label><input type="radio" name="price" value="low-high"> Low to High</label>
+                        <label><input type="radio" name="price" value="high-low"> High to Low</label>
+                        <label><input type="radio" name="price" value="below-2500"> 2500 & Below</label>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Ratings</h3>
+                    <div class="filter-options">
+                        <label><input type="radio" name="rating" value="5" checked> 5 star <span class="stars">★★★★★</span></label>
+                        <label><input type="radio" name="rating" value="4"> 4 star & Above</label>
+                    </div>
+                </div>
+
+                <button class="submit-filter-btn">Submit</button>
+            </aside>
+
+            <!-- Main Product Display -->
+            <section class="products-section">
+                <h2 class="section-title-left">Categories</h2>
+                <div class="products-grid-shopping">
+                    <!-- Row 1: Product 1 - Ashirvaad Attaa -->
+                    <div class="product-card-shopping" data-category="groceries">
+                        <div class="product-badge">20% off</div>
+                        <div class="product-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=300&h=300&fit=crop" alt="Ashirvaad Attaa">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Grocery</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                            <h3 class="product-name">Ashirvaad Attaa</h3>
+                            <div class="product-weight">1g</div>
+                            <div class="product-footer">
+                                <span class="product-price">$200</span>
+                                <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 1: Product 2 - Cabbage -->
+                    <div class="product-card-shopping" data-category="vegetables">
+                        <div class="product-badge">20% off</div>
+                        <div class="product-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1594282295009-8a3e0a0e0c8e?w=300&h=300&fit=crop" alt="Cabbage">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Vegetables</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                            <h3 class="product-name">Cabbage</h3>
+                            <div class="product-weight">750g</div>
+                            <div class="product-footer">
+                                <span class="product-price">$134</span>
+                                <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 1: Product 3 - Fortune-oil -->
+                    <div class="product-card-shopping" data-category="groceries">
+                        <div class="product-badge">20% off</div>
+                        <div class="product-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1474979266404-7eaacb8a73f9?w=300&h=300&fit=crop" alt="Fortune-oil">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Grocery</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                            <h3 class="product-name">Fortune-oil</h3>
+                            <div class="product-weight">250g</div>
+                            <div class="product-footer">
+                                <span class="product-price">$304</span>
+                                <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Product 4 - Banana -->
+                    <div class="product-card-shopping" data-category="fresh-fruits">
+                        <div class="product-badge">20% off</div>
+                        <div class="product-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=300&h=300&fit=crop" alt="Banana">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Fruits</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                            <h3 class="product-name">Banana</h3>
+                            <div class="product-weight">500g</div>
+                            <div class="product-footer">
+                                <span class="product-price">$14</span>
+                                <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Product 5 - Box of Chocolate -->
+                    <div class="product-card-shopping" data-category="snacks">
+                        <div class="product-badge">20% off</div>
+                        <div class="product-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?w=300&h=300&fit=crop" alt="Box of Chocolate">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Snacks & Sweets</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                            <h3 class="product-name">Box of Chocolate</h3>
+                            <div class="product-weight">750g</div>
+                            <div class="product-footer">
+                                <span class="product-price">$234</span>
+                                <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Product 6 - Red Onion -->
+                    <div class="product-card-shopping" data-category="vegetables">
+                        <div class="product-badge">20% off</div>
+                        <div class="product-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1518977822534-7049a61ee0c2?w=300&h=300&fit=crop" alt="Red Onion">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Vegetable</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                            <h3 class="product-name">Red Onion</h3>
+                            <div class="product-weight">750g</div>
+                            <div class="product-footer">
+                                <span class="product-price">$114</span>
+                                <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Product 7 - Red onion (sliced) -->
+                    <div class="product-card-shopping" data-category="vegetables">
+                        <div class="product-badge">20% off</div>
+                        <div class="product-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1608039829573-803fb23c1e8e?w=300&h=300&fit=crop" alt="Red onion sliced">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Vegetables</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                            <h3 class="product-name">Red onion</h3>
+                            <div class="product-weight">750g</div>
+                            <div class="product-footer">
+                                <span class="product-price">$114</span>
+                                <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Product 8 - Rice Flour -->
+                    <div class="product-card-shopping" data-category="groceries">
+                        <div class="product-badge">20% off</div>
+                        <div class="product-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1606914508486-0e4e4b0e0c8e?w=300&h=300&fit=crop" alt="Rice Flour">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Grocery</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                            <h3 class="product-name">Rice Flour</h3>
+                            <div class="product-weight">500g</div>
+                            <div class="product-footer">
+                                <span class="product-price">$332</span>
+                                <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Product 9 - Pomegranate -->
+                    <div class="product-card-shopping" data-category="fresh-fruits">
+                        <div class="product-badge">20% off</div>
+                        <div class="product-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1610192244273-e4c1e5e5a0e8?w=300&h=300&fit=crop" alt="Pomegranate">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Fruits</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                            <h3 class="product-name">Pomegranate</h3>
+                            <div class="product-weight">1kg</div>
+                            <div class="product-footer">
+                                <span class="product-price">$144</span>
+                                <button class="add-btn"><i class="fas fa-shopping-cart"></i> Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div class="footer-logo-text">
+                            <span>The Market</span>
+                            <small>grocery.com</small>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <p>Follow Us On:</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Our Mission</a></li>
+                            <li><a href="#">How It Works</a></li>
+                            <li><a href="#">Success</a></li>
+                            <li><a href="#">Courses</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">Browse</a></li>
+                            <li><a href="#">Packages</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Feature</h4>
+                        <ul>
+                            <li><a href="#">Designs</a></li>
+                            <li><a href="#">Full Stack</a></li>
+                            <li><a href="#">web app</a></li>
+                            <li><a href="#">Marketing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact & Social</h4>
+                        <ul>
+                            <li>123 saik Street, Chennai, TN</li>
+                            <li>+91-7867980-688</li>
+                            <li>learn@creativelearn.com</li>
+                            <li>
+                                <div class="social-media-footer">
+                                    <p>Follow Us On :</p>
+                                    <div class="social-icons-footer">
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                        <a href="#"><i class="fab fa-google"></i></a>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Creative learns. All rights reserved.</p>
+                <div class="footer-links-bottom">
+                    <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

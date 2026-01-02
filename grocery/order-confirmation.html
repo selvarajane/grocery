@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Market - Order Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="logo-text">
+                        <span>The Market</span>
+                        <small>grocery.com</small>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search product category">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="header-icons">
+                    <img src="https://i.pravatar.cc/40?img=12" alt="User" class="user-avatar">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-bell"></i>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shopping.html">Shopping</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Order Details Banner -->
+    <section class="order-banner">
+        <div class="container">
+            <div class="order-banner-content">
+                <div class="order-info">
+                    <div class="order-info-item">
+                        <span class="order-label">Order ID:</span>
+                        <span class="order-value">#SJKD456FH</span>
+                    </div>
+                    <div class="order-info-item">
+                        <span class="order-label">Payment Method:</span>
+                        <span class="order-value">G-PAY</span>
+                    </div>
+                    <div class="order-info-item">
+                        <span class="order-label">Transaction Id:</span>
+                        <span class="order-value">TF59DHJK</span>
+                    </div>
+                    <div class="order-info-item">
+                        <span class="order-label">Estimate Delivery Date:</span>
+                        <span class="order-value">28 June 2025</span>
+                    </div>
+                </div>
+                <button class="download-invoice-btn">Download Invoice</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Confirmation Section -->
+    <section class="order-confirmation-section">
+        <div class="container">
+            <!-- Product List -->
+            <div class="cart-products">
+                <div class="cart-product-item">
+                    <div class="cart-product-image">
+                        <img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=150&h=150&fit=crop" alt="Ashirvaad Attaas">
+                    </div>
+                    <div class="cart-product-info">
+                        <h3 class="cart-product-name">Ashirvaad Attaas</h3>
+                        <p class="cart-product-date">22 August 2025</p>
+                    </div>
+                    <div class="cart-product-price">$200</div>
+                </div>
+
+                <div class="cart-product-item">
+                    <div class="cart-product-image">
+                        <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=150&h=150&fit=crop" alt="Banana">
+                    </div>
+                    <div class="cart-product-info">
+                        <h3 class="cart-product-name">Banana</h3>
+                        <p class="cart-product-date">22 August 2025</p>
+                    </div>
+                    <div class="cart-product-price">$14</div>
+                </div>
+
+                <div class="cart-product-item">
+                    <div class="cart-product-image">
+                        <img src="https://images.unsplash.com/photo-1594282295009-8a3e0a0e0c8e?w=150&h=150&fit=crop" alt="Cabbage">
+                    </div>
+                    <div class="cart-product-info">
+                        <h3 class="cart-product-name">Cabbage</h3>
+                        <p class="cart-product-date">22 August 2025</p>
+                    </div>
+                    <div class="cart-product-price">$134</div>
+                </div>
+            </div>
+
+            <!-- Charges Summary -->
+            <div class="charges-summary">
+                <div class="charge-item">
+                    <span class="charge-label">Shipping</span>
+                    <span class="charge-value">$.00.0</span>
+                </div>
+                <div class="charge-item">
+                    <span class="charge-label">Taxes</span>
+                    <span class="charge-value">$.00.0</span>
+                </div>
+                <div class="charge-item">
+                    <span class="charge-label">Coupon Discount</span>
+                    <span class="charge-value discount">$.100</span>
+                </div>
+            </div>
+
+            <!-- Total and Track Order -->
+            <div class="order-total-section">
+                <div class="total-display">
+                    <span class="total-label">Total</span>
+                    <span class="total-amount">$.248</span>
+                </div>
+                <button class="track-order-btn" onclick="window.location.href='order-tracking.html'">Track Order</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div class="footer-logo-text">
+                            <span>The Market</span>
+                            <small>grocery.com</small>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <p>Follow Us On:</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Career</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Customer service</h4>
+                        <ul>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Track your order</a></li>
+                            <li><a href="#">Return</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Our information</h4>
+                        <ul>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">User terms&Conditions</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact info</h4>
+                        <ul>
+                            <li>123-456-789</li>
+                            <li>example@gmail.com</li>
+                            <li>72.north street</li>
+                            <li>Mumbai-001</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy;2025 My market. All rights reserved. <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
